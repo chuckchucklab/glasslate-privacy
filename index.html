@@ -20,7 +20,7 @@
   <p class="meta">Public URL: <a href="https://chuckchucklab.github.io/glasslate-privacy/">https://chuckchucklab.github.io/glasslate-privacy/</a></p>
 
   <h2>한국어</h2>
-  <p><strong>시행일: 2026년 8월 16일</strong></p>
+  <p><strong>시행일: 2026년 8월 19일</strong></p>
   <p>Glasslate(이하 "이 앱")는 화면에 보이는 외국어 텍스트를 인식해 번역문을 겹쳐 보여주는 Android 앱입니다. 이 방침은 이 앱이 어떤 데이터를 다루고, 무엇을 기기 밖으로 내보내지 않는지 설명합니다.</p>
 
   <h3>1. 이 앱이 화면 내용을 다루는 방식</h3>
@@ -38,13 +38,16 @@
     <tr><th>항목</th><th>예시</th></tr>
     <tr><td>선택한 번역 목표 언어</td><td>ko, en</td></tr>
     <tr><td>선택한 모드</td><td>전체 화면 / 선택 영역</td></tr>
+    <tr><td>모델 다운로드 네트워크</td><td>Wi-Fi만 / Wi-Fi 또는 모바일</td></tr>
+    <tr><td>번역 시점</td><td>자동 / 버블 탭</td></tr>
+    <tr><td>첫 실행 고지 확인</td><td>확인함</td></tr>
   </table>
   <p>이 값들은 클라우드 백업과 기기 간 이전에서 제외되도록 설정되어 있으며, 앱을 삭제하면 함께 삭제됩니다.</p>
 
   <h3>3. 네트워크 사용</h3>
   <p>이 앱은 두 가지 목적으로만 네트워크를 사용합니다.</p>
   <p><strong>(1) 언어 모델 및 문자 인식 모듈 다운로드</strong><br>
-  번역 모델과 일부 문자권(중국어·일본어·한국어)의 인식 모듈은 최초 1회 다운로드가 필요합니다. 다운로드는 Wi-Fi 연결에서만 수행됩니다. 이 통신에는 화면 내용이 포함되지 않습니다.</p>
+  번역 모델과 일부 문자권(중국어·일본어·한국어)의 인식 모듈은 최초 1회 다운로드가 필요합니다. 기본값은 Wi-Fi에서만 받는 것이고, 앱에서 모바일 데이터 허용을 고를 수 있습니다. 이 통신에는 화면 내용이 포함되지 않습니다.</p>
   <p><strong>(2) Google ML Kit SDK의 진단 데이터 전송</strong><br>
   이 앱은 문자 인식·언어 판정·번역에 Google의 ML Kit SDK를 사용합니다. ML Kit SDK는 Google의 공개 정책에 따라 다음과 같은 <strong>비내용 진단 데이터</strong>를 Google로 전송합니다.</p>
   <ul>
@@ -93,7 +96,7 @@
   <p><a href="https://github.com/chuckchucklab/glasslate-privacy/issues">https://github.com/chuckchucklab/glasslate-privacy/issues</a></p>
 
   <h2>English</h2>
-  <p><strong>Effective date: 16 August 2026</strong></p>
+  <p><strong>Effective date: 19 August 2026</strong></p>
   <p>Glasslate ("the app") recognizes foreign-language text on your screen and displays translations over it. This policy explains what the app does with that data, and what never leaves your device.</p>
 
   <h3>1. How the app handles screen content</h3>
@@ -111,13 +114,16 @@
     <tr><th>Item</th><th>Example</th></tr>
     <tr><td>Selected target language</td><td>ko, en</td></tr>
     <tr><td>Selected mode</td><td>Whole screen / Selected area</td></tr>
+    <tr><td>Model download network</td><td>Wi-Fi only / Wi-Fi or mobile</td></tr>
+    <tr><td>When to translate</td><td>Automatically / tap the bubble</td></tr>
+    <tr><td>First-run notice acknowledged</td><td>Yes</td></tr>
   </table>
   <p>They are excluded from cloud backup and device-to-device transfer, and are deleted when you uninstall the app.</p>
 
   <h3>3. Network use</h3>
   <p>The app uses the network for two purposes only.</p>
   <p><strong>(1) Downloading language models and text recognition modules</strong><br>
-  Translation models and the recognition modules for some scripts (Chinese, Japanese, Korean) require a one-time download, performed over Wi-Fi only. No screen content is included in this traffic.</p>
+  Translation models and the recognition modules for some scripts (Chinese, Japanese, Korean) require a one-time download. Downloads default to Wi-Fi only; you can allow mobile data in the app. No screen content is included in this traffic.</p>
   <p><strong>(2) Diagnostic data sent by the Google ML Kit SDK</strong><br>
   The app uses Google's ML Kit SDK for text recognition, language identification, and translation. Per Google's published policy, the ML Kit SDK transmits the following <strong>non-content diagnostic data</strong> to Google:</p>
   <ul>
