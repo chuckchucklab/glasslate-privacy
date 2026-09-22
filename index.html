@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +17,12 @@
 </head>
 <body>
   <h1>Glasslate — Privacy Policy / 개인정보처리방침</h1>
+  <p class="meta"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
   <p class="meta">Public URL: <a href="https://chuckchucklab.github.io/glasslate-privacy/">https://chuckchucklab.github.io/glasslate-privacy/</a></p>
 
+  <section id="ko" lang="ko">
   <h2>한국어</h2>
-  <p><strong>시행일: 2026년 8월 19일</strong></p>
+  <p><strong>시행일: 2026년 9월 22일</strong></p>
   <p>Glasslate(이하 "이 앱")는 화면에 보이는 외국어 텍스트를 인식해 번역문을 겹쳐 보여주는 Android 앱입니다. 이 방침은 이 앱이 어떤 데이터를 다루고, 무엇을 기기 밖으로 내보내지 않는지 설명합니다.</p>
 
   <h3>1. 이 앱이 화면 내용을 다루는 방식</h3>
@@ -34,6 +36,7 @@
   <p>화면 공유는 알림 영역의 정지 버튼, 앱 내 Stop, 또는 Android 시스템의 공유 중지로 언제든 끝낼 수 있습니다.</p>
 
   <h3>2. 기기에 저장되는 것</h3>
+  <p>다음 값만 기기 내부의 앱 전용 저장소에 남습니다.</p>
   <table>
     <tr><th>항목</th><th>예시</th></tr>
     <tr><td>선택한 번역 목표 언어</td><td>ko, en</td></tr>
@@ -41,11 +44,15 @@
     <tr><td>모델 다운로드 네트워크</td><td>Wi-Fi만 / Wi-Fi 또는 모바일</td></tr>
     <tr><td>번역 시점</td><td>자동 / 버블 탭</td></tr>
     <tr><td>첫 실행 고지 확인</td><td>확인함</td></tr>
+    <tr><td>원문 문자 고정</td><td>자동 / 한국어 / 일본어 등</td></tr>
+    <tr><td>번역하지 않을 언어</td><td>en, ja</td></tr>
+    <tr><td>무료 체험 시작 시각</td><td>첫 실행 고지를 확인한 시각</td></tr>
+    <tr><td>프리미엄 구매 여부</td><td>구매함 / 구매 안 함 (Google Play 조회 결과를 오프라인용으로 보관)</td></tr>
   </table>
   <p>이 값들은 클라우드 백업과 기기 간 이전에서 제외되도록 설정되어 있으며, 앱을 삭제하면 함께 삭제됩니다.</p>
 
   <h3>3. 네트워크 사용</h3>
-  <p>이 앱은 두 가지 목적으로만 네트워크를 사용합니다.</p>
+  <p>이 앱은 세 가지 목적으로만 네트워크를 사용합니다.</p>
   <p><strong>(1) 언어 모델 및 문자 인식 모듈 다운로드</strong><br>
   번역 모델과 일부 문자권(중국어·일본어·한국어)의 인식 모듈은 최초 1회 다운로드가 필요합니다. 기본값은 Wi-Fi에서만 받는 것이고, 앱에서 모바일 데이터 허용을 고를 수 있습니다. 이 통신에는 화면 내용이 포함되지 않습니다.</p>
   <p><strong>(2) Google ML Kit SDK의 진단 데이터 전송</strong><br>
@@ -61,13 +68,16 @@
   </ul>
   <p>마지막 항목에 대해 분명히 밝힙니다. 이 앱은 원본 언어를 사용자에게 묻지 않고 화면을 보고 자동으로 판정하므로, <strong>"어떤 언어로 된 화면을 보고 있는지"에 해당하는 언어 종류가 Google로 전달됩니다.</strong> 화면의 실제 내용(이미지·문장·번역문)은 전송되지 않지만, 언어 종류는 전송됩니다. 이 전송은 ML Kit SDK가 수행하며 앱이 끄거나 사용자가 거부할 수 있는 수단은 제공되지 않습니다.</p>
   <p>ML Kit의 데이터 처리에 대한 Google의 공식 설명: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></p>
-  <p>이 두 가지 외에 이 앱이 구현한 네트워크 업로드는 없습니다. 광고 SDK, 분석 SDK, 크래시 리포터를 포함하지 않습니다.</p>
+  <p><strong>(3) Google Play 결제</strong><br>
+  이 앱은 자동 번역 등 일부 기능을 한 번 구매로 여는 인앱 상품(프리미엄)을 제공하며, 첫 실행 후 7일간은 무료 체험으로 쓸 수 있습니다. 구매는 Google Play 결제 시스템이 처리합니다. 이 앱은 Google Play에 상품 정보와 구매 여부를 조회하고 구매를 확인(acknowledge)할 뿐, <strong>카드 번호 등 결제 정보를 받지 않으며</strong> 구매 정보를 자체 서버로 보내지 않습니다. 이 통신에는 화면 내용이 포함되지 않습니다. Google Play가 결제 과정에서 처리하는 정보는 Google 개인정보처리방침을 따릅니다: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+  <p>이 세 가지 외에 이 앱이 구현한 네트워크 업로드는 없습니다. 광고 SDK, 분석 SDK, 크래시 리포터를 포함하지 않습니다.</p>
 
   <h3>4. 이 앱이 하지 않는 것</h3>
   <ul>
     <li>화면 캡처 이미지를 저장하거나 전송하지 않습니다.</li>
     <li>인식된 텍스트와 번역문을 저장하거나 전송하지 않습니다.</li>
     <li>계정을 만들지 않으며 로그인을 요구하지 않습니다.</li>
+    <li>결제 정보를 직접 받거나 저장하지 않습니다.</li>
     <li>연락처, 위치, 통화 기록, 파일에 접근하지 않습니다.</li>
     <li>광고를 표시하지 않고 데이터를 판매하지 않습니다.</li>
   </ul>
@@ -78,7 +88,8 @@
     <tr><td>다른 앱 위에 표시</td><td>번역문과 제어 버블을 다른 앱 위에 그리기 위해 필요합니다</td></tr>
     <tr><td>알림</td><td>실행 중인 화면 공유 상태와 정지 버튼을 알림으로 제공합니다. 거부해도 버블로 제어할 수 있습니다</td></tr>
     <tr><td>포그라운드 서비스</td><td>화면 공유가 유지되는 동안 처리를 계속하기 위해 필요합니다</td></tr>
-    <tr><td>인터넷 / 네트워크 상태</td><td>앱이 직접 선언하지 않았으나 ML Kit SDK가 추가합니다. §3의 두 용도에만 쓰입니다</td></tr>
+    <tr><td>인터넷 / 네트워크 상태</td><td>앱이 직접 선언하지 않았으나 ML Kit SDK와 Google Play 결제 라이브러리가 추가합니다. §3의 세 용도에만 쓰입니다</td></tr>
+    <tr><td>Google Play 결제</td><td>프리미엄 구매와 구매 여부 확인에 필요합니다. Google Play 결제 라이브러리가 추가합니다</td></tr>
   </table>
   <p>화면 공유는 Android 권한이 아니라 <strong>매 실행마다 시스템이 확인하는 사용자 동의</strong>입니다.</p>
 
@@ -94,9 +105,11 @@
 
   <h3>9. 문의</h3>
   <p><a href="https://github.com/chuckchucklab/glasslate-privacy/issues">https://github.com/chuckchucklab/glasslate-privacy/issues</a></p>
+  </section>
 
+  <section id="en" lang="en">
   <h2>English</h2>
-  <p><strong>Effective date: 19 August 2026</strong></p>
+  <p><strong>Effective date: 22 September 2026</strong></p>
   <p>Glasslate ("the app") recognizes foreign-language text on your screen and displays translations over it. This policy explains what the app does with that data, and what never leaves your device.</p>
 
   <h3>1. How the app handles screen content</h3>
@@ -110,6 +123,7 @@
   <p>You can end screen sharing at any time from the notification, the in-app Stop control, or Android's own sharing indicator.</p>
 
   <h3>2. What is stored on your device</h3>
+  <p>Only these values are kept, in the app's private storage:</p>
   <table>
     <tr><th>Item</th><th>Example</th></tr>
     <tr><td>Selected target language</td><td>ko, en</td></tr>
@@ -117,11 +131,15 @@
     <tr><td>Model download network</td><td>Wi-Fi only / Wi-Fi or mobile</td></tr>
     <tr><td>When to translate</td><td>Automatically / tap the bubble</td></tr>
     <tr><td>First-run notice acknowledged</td><td>Yes</td></tr>
+    <tr><td>Pinned source script</td><td>Automatic / Korean / Japanese, etc.</td></tr>
+    <tr><td>Languages to leave untranslated</td><td>en, ja</td></tr>
+    <tr><td>Free trial start time</td><td>When you acknowledged the first-run notice</td></tr>
+    <tr><td>Premium purchased</td><td>Yes / No (the last answer from Google Play, kept for offline use)</td></tr>
   </table>
   <p>They are excluded from cloud backup and device-to-device transfer, and are deleted when you uninstall the app.</p>
 
   <h3>3. Network use</h3>
-  <p>The app uses the network for two purposes only.</p>
+  <p>The app uses the network for three purposes only.</p>
   <p><strong>(1) Downloading language models and text recognition modules</strong><br>
   Translation models and the recognition modules for some scripts (Chinese, Japanese, Korean) require a one-time download. Downloads default to Wi-Fi only; you can allow mobile data in the app. No screen content is included in this traffic.</p>
   <p><strong>(2) Diagnostic data sent by the Google ML Kit SDK</strong><br>
@@ -137,13 +155,16 @@
   </ul>
   <p>To be explicit about that last item: the app never asks you to pick a source language — it detects it from your screen. So <strong>the language you are reading is transmitted to Google.</strong> The actual content of your screen (images, sentences, translations) is not transmitted, but the language is. This transmission is performed by the ML Kit SDK, and neither the app nor you are offered a way to disable it.</p>
   <p>Google's official disclosure: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></p>
-  <p>Beyond these two, the app implements no network upload of any kind. It contains no advertising SDK, no analytics SDK, and no crash reporter.</p>
+  <p><strong>(3) Google Play billing</strong><br>
+  The app offers a one-time in-app purchase (Premium) that unlocks conveniences such as automatic translation, with a 7-day free trial after first run. Purchases are processed by Google Play's billing system. The app only asks Google Play for the product details and whether you own it, and acknowledges the purchase. It <strong>never receives your card number or other payment details</strong>, and sends no purchase information to any server of its own. No screen content is included in this traffic. Information Google Play handles during payment is governed by Google's Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+  <p>Beyond these three, the app implements no network upload of any kind. It contains no advertising SDK, no analytics SDK, and no crash reporter.</p>
 
   <h3>4. What the app does not do</h3>
   <ul>
     <li>Does not store or transmit screen captures.</li>
     <li>Does not store or transmit recognized text or translations.</li>
     <li>Does not create accounts or require sign-in.</li>
+    <li>Does not receive or store payment details.</li>
     <li>Does not access contacts, location, call logs, or files.</li>
     <li>Shows no ads and sells no data.</li>
   </ul>
@@ -154,7 +175,8 @@
     <tr><td>Display over other apps</td><td>Required to draw translations and the control bubble above other apps</td></tr>
     <tr><td>Notifications</td><td>Shows the active sharing state and a stop control. If denied, the bubble still works</td></tr>
     <tr><td>Foreground service</td><td>Required to keep processing while screen sharing is active</td></tr>
-    <tr><td>Internet / Network state</td><td>Not declared by the app; added by the ML Kit SDK. Used only for the two purposes in §3</td></tr>
+    <tr><td>Internet / Network state</td><td>Not declared by the app; added by the ML Kit SDK and the Google Play Billing Library. Used only for the three purposes in §3</td></tr>
+    <tr><td>Google Play billing</td><td>Required to buy Premium and check whether you own it. Added by the Google Play Billing Library</td></tr>
   </table>
   <p>Screen sharing is not an Android permission — it is a <strong>system consent confirmed each time you start</strong>.</p>
 
@@ -170,5 +192,6 @@
 
   <h3>9. Contact</h3>
   <p><a href="https://github.com/chuckchucklab/glasslate-privacy/issues">https://github.com/chuckchucklab/glasslate-privacy/issues</a></p>
+  </section>
 </body>
 </html>
